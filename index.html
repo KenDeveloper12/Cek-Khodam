@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cek Khodam</h1>
+        <p id="credit">by <a href="https://twitter.com/@aeroltzz">@kendeveloper</a></p>
+        <div class="form-container">
+            <input type="text" placeholder="Masukkan nama kamu" id="nameInput">
+            <button onclick="checkKhodam()">Cek Khodam</button>
+        </div>
+        <div class="result-container">
+            <p>Khodam <span id="userName"></span> Adalah</p>
+            <span id="resultText">Result</span>
+            <span id="resultDesk">Deskripsi</span>
+            <img id="resultImg" src="none" alt="Gambar Khodam">
+            <button onclick="ulang()">Mengulangi</button>
+        </div>
+        <button class="donate-button">Dukung Saya di Trakteer</button>
+        <button class="oshi-button">Cek Oshi JKT48</button>
+        <p id="foother">Powered By <a href="https://twitter.com/kotomonodev">@vinetrimestudio</a></p>
+    </div>
+    
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-text">
+          Sedang mengecek Khodam <span id="userName"></span>
+        </div>
+        <div class="dots-container">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+    </div>
+    
+    <div class="error-notification" id="errorNotification">
+        <p>Nama tidak boleh kosong. Silakan masukkan nama Anda.</p>
+        <button onclick="hideError()">Tutup</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
